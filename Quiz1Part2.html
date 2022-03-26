@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const voters = 
+    [
+        {name: "John Doe", isRegistered: true},
+        {name: "Nick Fury", isRegistered: false},
+        {name: "Steve Rogers", isRegistered: true},
+        {name: "Tony Starks", isRegistered: false},
+        {name: "Stephen Range", isRegistered: false}
+    ]
+
+let v = 1;
+
+const registeredVoters = voters.filter
+(voters=>{return voters.isRegistered == true;})
+
+const unregisteredVoters = voters.filter
+(voters=>{return voters.isRegistered == false;})
+
+console.log("Non Registered Voters:");
+    unregisteredVoters.forEach
+    (voters=>{console.log(v+`.)${voters.name}`)
+        v++;
+    })
+
+v = 1;
+
+console.log("Registered Voters:");
+    registeredVoters.forEach(voters=>{
+    console.log(v+`.)${voters.name}`)
+        v++;
+    })
+
+v = 1;
+    </script>
+</body>
+</html>
+
+
